@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Integrity Pledge | Personal Portfolio</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <!-- Print Styles -->
+    <style>
+        @media print {
+            .navbar, .btn, footer, .scroll-to-top {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 12pt;
+                line-height: 1.5;
+            }
+            .card, .bg-elevated {
+                background: white !important;
+                border: 1px solid #000 !important;
+                box-shadow: none !important;
+            }
+            .text-brand {
+                color: #0d6efd !important;
+            }
+            .text-muted {
+                color: #666 !important;
+            }
+            h1, h2, h3 {
+                color: black !important;
+            }
+            .signature-section {
+                page-break-inside: avoid;
+                margin-top: 2cm;
+            }
+        }
+    </style>
+</head>
+<body data-page="academic">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/quiz1/">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quiz1/" data-page="home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quiz1/profile/" data-page="profile">PROFILE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quiz1/hometown/" data-page="hometown">HOMETOWN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quiz1/food/" data-page="food">FOOD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quiz1/tourist/" data-page="tourist">TOURIST</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="academic-page">
+        <div class="container">
+            <!-- Header -->
+            <header class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Academic Integrity Pledge</h1>
+                <p class="lead text-muted">Personal Website Development Project</p>
+                <hr class="w-50 mx-auto">
+                <div class="mt-4">
+                    <p class="mb-1"><strong>Course:</strong> Web Development Fundamentals</p>
+                    <p class="mb-1"><strong>Institution:</strong> Institut Teknologi Sepuluh Nopember (ITS)</p>
+                    <p class="mb-1"><strong>Semester:</strong> Fall 2024</p>
+                    <p class="mb-0"><strong>Date:</strong> <span id="current-date"></span></p>
+                </div>
+            </header>
+
+            <!-- Project Declaration -->
+            <section class="mb-5">
+                <div class="card bg-elevated p-4">
+                    <h2 class="fw-bold mb-4">Project Declaration</h2>
+                    <p class="mb-3">I, <strong>[Your Name]</strong>, student ID <strong>[Your Student ID]</strong>, hereby declare that this personal website project submitted for academic evaluation represents my own original work and understanding.</p>
+                    
+                    <h4 class="fw-bold text-brand mb-3">Project Details</h4>
+                    <div class="row">
+                        <div class="pledge-item mb-3">
+                            <h6 class="fw-bold">2. Proper Attribution</h6>
+                            <p class="mb-0">I have properly credited all external resources used in this project, including Bootstrap CSS framework (via CDN), Google Fonts, and any inspiration drawn from legitimate educational sources. All placeholder images are clearly marked as such.</p>
+                        </div>
+                        
+                        <div class="pledge-item mb-3">
+                            <h6 class="fw-bold">3. No Plagiarism</h6>
+                            <p class="mb-0">I have not copied code, design elements, or content from other students' work, online tutorials without attribution, or any unauthorized sources. All code represents my genuine understanding and implementation.</p>
+                        </div>
+                        
+                        <div class="pledge-item mb-3">
+                            <h6 class="fw-bold">4. Honest Collaboration</h6>
+                            <p class="mb-0">While I may have discussed general concepts with classmates, all specific implementation, design decisions, and code writing were completed independently. I did not receive unauthorized assistance or provide my work to others.</p>
+                        </div>
+                        
+                        <div class="pledge-item mb-3">
+                            <h6 class="fw-bold">5. Technical Integrity</h6>
+                            <p class="mb-0">All functionality demonstrated in this website is working and authentic. I have not included non-functional code or misrepresented my technical abilities. The responsive design and interactive features reflect my actual skill level.</p>
+                        </div>
+                        
+                        <div class="pledge-item mb-0">
+                            <h6 class="fw-bold">6. Submission Authenticity</h6>
+                            <p class="mb-0">This project is submitted for the first time and has not been previously submitted for credit in any other course or institution. All work was completed during the designated project timeline.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources & References -->
+            <section class="mb-5">
+                <div class="card bg-elevated p-4">
+                    <h3 class="fw-bold mb-4">Resources & References Used</h3>
+                    
+                    <h5 class="text-brand mb-3">Legitimate Educational Resources</h5>
+                    
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h6 class="fw-bold">Frameworks & Libraries</h6>
+                            <ul class="text-muted mb-3">
+                                <li>Bootstrap 5.3.2 (via CDN) - CSS Framework</li>
+                                <li>Google Fonts - Inter & Poppins font families</li>
+                                <li>Vanilla JavaScript - No external JS libraries</li>
+                            </ul>
+                            
+                            <h6 class="fw-bold">Development Tools</h6>
+                            <ul class="text-muted mb-0">
+                                <li>Visual Studio Code - Code editor</li>
+                                <li>Chrome DevTools - Debugging & testing</li>
+                                <li>Git - Version control</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <h6 class="fw-bold">Learning Resources</h6>
+                            <ul class="text-muted mb-3">
+                                <li>Course lecture materials and slides</li>
+                                <li>Official Bootstrap documentation</li>
+                                <li>MDN Web Docs for HTML/CSS/JS reference</li>
+                                <li>W3C Web Accessibility Guidelines</li>
+                            </ul>
+                            
+                            <h6 class="fw-bold">Content Sources</h6>
+                            <ul class="text-muted mb-0">
+                                <li>Personal knowledge about Surabaya</li>
+                                <li>General public information about tourist attractions</li>
+                                <li>Placeholder images clearly marked as such</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-dark rounded p-3 mt-4">
+                        <h6 class="fw-bold mb-2">⚠️ Important Note</h6>
+                        <p class="small text-muted mb-0">All placeholder images used in this project are clearly marked and intended for educational purposes only. In a production environment, these would be replaced with properly licensed images or original photography.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Specifications -->
+            <section class="mb-5">
+                <div class="card bg-elevated p-4">
+                    <h3 class="fw-bold mb-4">Technical Implementation Details</h3>
+                    
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <h5 class="text-brand mb-3">Architecture</h5>
+                            <ul class="small text-muted">
+                                <li><strong>Structure:</strong> Folder-based routing with index.html files</li>
+                                <li><strong>Styling:</strong> Custom CSS with Bootstrap 5 integration</li>
+                                <li><strong>JavaScript:</strong> Vanilla JS for interactivity</li>
+                                <li><strong>Accessibility:</strong> WCAG AA compliant design</li>
+                                <li><strong>Responsive:</strong> Mobile-first approach</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-4 mb-4">
+                            <h5 class="text-brand mb-3">Features Implemented</h5>
+                            <ul class="small text-muted">
+                                <li><strong>Navigation:</strong> Active page highlighting</li>
+                                <li><strong>Scroll Behavior:</strong> Smooth scrolling & back-to-top</li>
+                                <li><strong>Dark Theme:</strong> Professional black & blue design</li>
+                                <li><strong>Cards:</strong> Hover effects and transitions</li>
+                                <li><strong>Forms:</strong> Accessible form elements</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-4 mb-4">
+                            <h5 class="text-brand mb-3">Quality Assurance</h5>
+                            <ul class="small text-muted">
+                                <li><strong>Validation:</strong> W3C HTML/CSS validation</li>
+                                <li><strong>Testing:</strong> Cross-browser compatibility</li>
+                                <li><strong>Performance:</strong> Optimized loading times</li>
+                                <li><strong>SEO:</strong> Semantic HTML and meta tags</li>
+                                <li><strong>Security:</strong> No external script dependencies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Understanding Declaration -->
+            <section class="mb-5">
+                <div class="card bg-elevated p-4">
+                    <h3 class="fw-bold mb-4">Understanding & Learning Declaration</h3>
+                    
+                    <p class="mb-3">By submitting this project, I demonstrate my understanding of the following web development concepts:</p>
+                    
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h6 class="text-brand mb-2">HTML5 & Semantic Markup</h6>
+                            <ul class="small text-muted mb-3">
+                                <li>Proper document structure and DOCTYPE</li>
+                                <li>Semantic elements (header, nav, main, footer)</li>
+                                <li>Accessibility attributes (aria-*, alt text)</li>
+                                <li>Form elements and validation</li>
+                            </ul>
+                            
+                            <h6 class="text-brand mb-2">CSS3 & Responsive Design</h6>
+                            <ul class="small text-muted mb-0">
+                                <li>CSS Grid and Flexbox layouts</li>
+                                <li>Media queries for responsive design</li>
+                                <li>CSS custom properties (variables)</li>
+                                <li>Animations and transitions</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <h6 class="text-brand mb-2">JavaScript & Interactivity</h6>
+                            <ul class="small text-muted mb-3">
+                                <li>DOM manipulation and event handling</li>
+                                <li>ES6+ modern JavaScript syntax</li>
+                                <li>Intersection Observer API</li>
+                                <li>Local storage and data persistence</li>
+                            </ul>
+                            
+                            <h6 class="text-brand mb-2">Web Standards & Best Practices</h6>
+                            <ul class="small text-muted mb-0">
+                                <li>Web accessibility guidelines (WCAG)</li>
+                                <li>Performance optimization techniques</li>
+                                <li>SEO fundamentals</li>
+                                <li>Progressive enhancement principles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Consequences Understanding -->
+            <section class="mb-5">
+                <div class="card bg-elevated p-4 border border-warning">
+                    <h3 class="fw-bold mb-4">⚖️ Understanding of Academic Consequences</h3>
+                    
+                    <p class="mb-3">I fully understand that violation of academic integrity policies may result in:</p>
+                    
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <h6 class="text-warning mb-2">Academic Penalties</h6>
+                            <ul class="small text-muted">
+                                <li>Failure of the assignment or project</li>
+                                <li>Failure of the entire course</li>
+                                <li>Academic probation or suspension</li>
+                                <li>Permanent notation on academic record</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-3">
+                            <h6 class="text-warning mb-2">Professional Consequences</h6>
+                            <ul class="small text-muted">
+                                <li>Damage to professional reputation</li>
+                                <li>Loss of trust from faculty and peers</li>
+                                <li>Difficulty obtaining recommendations</li>
+                                <li>Impact on future academic/career opportunities</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-warning bg-opacity-10 rounded p-3 mt-3">
+                        <p class="small mb-0"><strong>I acknowledge</strong> that I have read and understood the institution's academic integrity policies and agree to uphold the highest standards of academic honesty in all my work.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Signature Section -->
+            <section class="signature-section">
+                <div class="card bg-elevated p-5">
+                    <h3 class="fw-bold text-center mb-4">Digital Signature & Commitment</h3>
+                    
+                    <div class="text-center mb-4">
+                        <p class="mb-3">By submitting this pledge electronically, I affirm my commitment to academic integrity and acknowledge that this digital submission constitutes my official signature.</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="signature-box p-4 border border-2 rounded text-center">
+                                <h6 class="fw-bold mb-2">Student Information</h6>
+                                <p class="mb-1"><strong>Name:</strong> [Your Full Name]</p>
+                                <p class="mb-1"><strong>Student ID:</strong> [Your Student ID]</p>
+                                <p class="mb-1"><strong>Email:</strong> [your.email@its.ac.id]</p>
+                                <p class="mb-0"><strong>Program:</strong> Informatics Engineering</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="signature-box p-4 border border-2 rounded text-center">
+                                <h6 class="fw-bold mb-2">Submission Details</h6>
+                                <p class="mb-1"><strong>Date:</strong> <span class="submission-date"></span></p>
+                                <p class="mb-1"><strong>Time:</strong> <span id="submission-time"></span></p>
+                                <p class="mb-1"><strong>Browser:</strong> <span id="user-browser"></span></p>
+                                <p class="mb-0"><strong>IP Address:</strong> [Logged by system]</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="digital-signature mb-4">
+                            <div class="signature-line mx-auto" style="width: 300px; height: 60px; border: 2px dashed var(--brand); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                <span class="text-brand fw-bold">[Digital Signature Applied]</span>
+                            </div>
+                            <p class="small text-muted mt-2">Electronic signature applied upon form submission</p>
+                        </div>
+                        
+                        <div class="commitment-statement">
+                            <p class="fst-italic text-brand mb-0">"I hereby digitally sign this Academic Integrity Pledge and commit to upholding the highest standards of academic honesty in all my work."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Print Instructions -->
+            <section class="mb-5 d-print-none">
+                <div class="card bg-elevated p-4 text-center">
+                    <h4 class="fw-bold mb-3">📄 Print Instructions</h4>
+                    <p class="text-muted mb-3">This document is designed to be printer-friendly. Click the button below to print a hard copy for your records.</p>
+                    <button onclick="window.print()" class="btn btn-brand btn-lg">
+                        🖨️ Print This Pledge
+                    </button>
+                    <p class="small text-muted mt-3">The printed version will automatically format properly and exclude navigation elements.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 d-print-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2024 Personal Portfolio. Built with Bootstrap 5.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="/quiz1/" class="text-muted me-3">Return to Portfolio</a>
+                    <a href="mailto:student@its.ac.id" class="text-muted">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top d-print-none" aria-label="Scroll to top" title="Scroll to top">
+        ↑
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+    
+    <!-- Page-specific JavaScript -->
+    <script>
+        // Set current date and time
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            const dateOptions = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                weekday: 'long'
+            };
+            const timeOptions = {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+            
+            const currentDate = now.toLocaleDateString('en-US', dateOptions);
+            const currentTime = now.toLocaleTimeString('en-US', timeOptions);
+            const browser = navigator.userAgent.split(' ').pop();
+            
+            // Update date elements
+            document.getElementById('current-date').textContent = currentDate;
+            document.querySelectorAll('.submission-date').forEach(el => {
+                el.textContent = currentDate;
+            });
+            document.getElementById('submission-time').textContent = currentTime;
+            document.getElementById('user-browser').textContent = browser;
+        });
+        
+        // Print function with confirmation
+        function printPledge() {
+            if (confirm('This will print the Academic Integrity Pledge. Make sure all information is correct before printing. Continue?')) {
+                window.print();
+            }
+        }
+        
+        // Add print event listener for additional formatting
+        window.addEventListener('beforeprint', function() {
+            document.title = 'Academic Integrity Pledge - ' + document.getElementById('current-date').textContent;
+        });
+    </script>
+</body>
+</html>="col-lg-6 mb-3">
+                            <h6 class="fw-bold">Project Title:</h6>
+                            <p class="text-muted mb-0">Personal Portfolio Website - Surabaya Cultural Showcase</p>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <h6 class="fw-bold">Technologies Used:</h6>
+                            <p class="text-muted mb-0">HTML5, CSS3, JavaScript (Vanilla), Bootstrap 5</p>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <h6 class="fw-bold">Project Type:</h6>
+                            <p class="text-muted mb-0">Static Website with Responsive Design</p>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <h6 class="fw-bold">Submission Date:</h6>
+                            <p class="text-muted mb-0"><span class="submission-date"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pledge Statement -->
+            <section class="mb-5">
+                <div class="pledge-text">
+                    <h2 class="fw-bold mb-4">Academic Integrity Pledge</h2>
+                    
+                    <h4 class="text-brand mb-3">I solemnly pledge that:</h4>
+                    
+                    <div class="pledge-items mb-4">
+                        <div class="pledge-item mb-3">
+                            <h6 class="fw-bold">1. Original Work</h6>
+                            <p class="mb-0">This website is entirely my own creation. All HTML, CSS, and JavaScript code has been written by me, demonstrating my understanding of web development concepts and techniques taught in class.</p>
+                        </div>
+                        
+                        <div class
